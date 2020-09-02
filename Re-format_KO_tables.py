@@ -15,6 +15,6 @@ for i in range(len(fns)):
 ##Create new dfs that removes the UN-annotated ORFs
 Sample_IDs = list(d2.keys())
 for i in range(len(Sample_IDs)):
-    d2[Sample_IDs[i]].to_csv(str(Sample_IDs[i]) + "_reformat.txt", index=False, sep='\t')
+    d2[Sample_IDs[i]].to_csv(str(Sample_IDs[i]) + "_reformat.txt", index=False, sep='\t', header=None)
 
 
